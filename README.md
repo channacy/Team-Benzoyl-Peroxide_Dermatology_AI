@@ -13,12 +13,12 @@
 
 ## **👩🏽‍💻 Setup & Execution**
 
-* How to clone the repository
+How to clone the repository
 1) Click on green code button in the upper right corner to copy repository url (preferably SSH)
 2) Go to your command line / terminal and navigate using cd to your destination folder
 3) Type git clone paste-your-repository-url (Note: may need to set up personal tokens for Github account, follow instructions on Github website)
 
-* How to access the dataset(s) and run notebook
+How to access the dataset(s) and run notebook
 1) Click on green code button and download zip file to see all train and test files
 2) Upload the Jupyter Notebook (.ipynb file) to Google Colab
 3) Create API token in Kaggle
@@ -42,12 +42,12 @@ d) Create new token and save in a secure place
 
 ## **📊 Data Exploration**
 
-**Dataset Used**
+Dataset Used
 * Kaggle's competition dataset, containing 21 classes of skin conditions.
 * Images labeled according to different dermatological diseases.
 
 
-**Data Preprocessing & Challenges**
+Data Preprocessing & Challenge
 * Resized images to 224x224 pixels for model compatibility.
 * Applied augmentations (random contrast, brightness adjustments, rotation, and flipping) to reduce bias.
 * Balanced dataset using class weighting and a weighted sampler to prevent underrepresentation.
@@ -55,24 +55,22 @@ d) Create new token and save in a secure place
 
 ## **🧠 Model Development**
 
-Model Used
-* ConvNeXt
-* ViT
-* EfficientNet_V2
-* RegNet-Y 128GF (Pretrained on ImageNet, fine-tuned for skin condition classification).
-* Fully connected layer replaced with a classifier for 21 skin conditions.
-
-
+* Model Used
+     * ConvNeXt
+     * ViT
+     * EfficientNet_V2
+     * RegNet-Y 128GF (Pretrained on ImageNet, fine-tuned for skin condition classification).
+     * Fully connected layer replaced with a classifier for 21 skin conditions.
 * Weighted CrossEntropy Loss to handle class imbalances.
 Feature Selection & Hyperparameter Tuning
 * Tested different architectures (ResNet50, ConvNeXT, ViT, EfficientNet_V2)
 
 
 - Best results achieved with ConvNeXT.
- - 0.72957 accuracy with 50 epochs, BATCH_SIZE = 256
-* 0.66841 accuracy with 50 epochs, BATCH_SIZE = 64
-* 0.68575 accuracy with BATCH_SIZE = 512
-* 0.69…With BATCH_SIZE = 128
+     * 0.72957 accuracy with 50 epochs, BATCH_SIZE = 256
+     * 0.66841 accuracy with 50 epochs, BATCH_SIZE = 64
+     * 0.68575 accuracy with BATCH_SIZE = 512
+     * 0.69…With BATCH_SIZE = 128
 
 * Fine-tuned last layers to improve performance.
 Training Setup
