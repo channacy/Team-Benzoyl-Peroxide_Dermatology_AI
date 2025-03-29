@@ -1,5 +1,17 @@
 # VIR_AJL_Team-Benzoyl-Peroxide
 
+### **👥 Team Members**
+
+| Name | GitHub Handle | Contribution |
+| ----- | ----- | ----- |
+| Channacy Un | @channacy | Trained different parameters for CNN, ResNet50, ConvNeXt
+| Soraya Sardine | @Zrayaart | Trained CNN model and Assisted with ReadMe
+| Joanne Liu | @joooanneliu | Trained ViT and EfficientNet_V2 models
+| Nicole Rodriguez | @nicolerodriguez16 | 
+| Jinglin Li| @jinglin-l | 
+|Shreya Isharani| @shreyaisharani |
+
+
 ## **🎯 Project Highlights**
 
 * Built a RegNet-Y model using PyTorch to classify 21 different skin conditions.
