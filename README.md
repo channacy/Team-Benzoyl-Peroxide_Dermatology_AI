@@ -15,7 +15,7 @@
 ## **🎯 Project Highlights**
 
 * Built a RegNet-Y model using PyTorch to classify 21 different skin conditions.
-* Achieved a leaderboard F1-score of 0.72957, ranking top 3 in the Kaggle competition.
+* Achieved a leaderboard F1-score of 0.69441, ranking top 4 in the Kaggle competition.
 * Implemented a weighted loss function to address class imbalances.
 * Applied fairness-aware data augmentation (contrast and brightness adjustments) to improve representation across diverse skin tones.
 
